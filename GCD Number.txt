@@ -1,0 +1,25 @@
+
+package exp1.pkg2;
+import java.util.Scanner;
+public class GCDNUM {
+    public static void main(String args[])
+    {
+       //int num1=80,num2=50;
+       
+       Scanner input = new Scanner(System.in);
+       System.out.println("Enter two numbers");
+       int ab = input.nextInt();
+       int ac= input.nextInt();
+        int gcd = 1;
+                
+       for(int i = 1; i<=ab && i <=ac; i++) 
+       {
+           if(ab%i==0 && ac%i==0)
+           {
+               gcd = i;
+           }
+       }System.out.println("GCD of " + ab +" and " + ac + " is " + gcd);
+    }
+     
+    
+}
