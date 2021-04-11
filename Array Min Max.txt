@@ -1,0 +1,43 @@
+
+package exp1.pkg2;
+
+//import java.util.Arrays;
+
+public class arrayMINmax {
+    public static void main(String args[]){
+       int[] array = new int[20];
+       int max = getMax(array);
+         System.out.println("Maximum Value is: "+max);
+       int min = getMin(array);
+         System.out.println("Minimum Value is: "+min);
+  }
+
+    public static int getMax(int[] inputArray){ 
+       int maxValue = inputArray[0]; 
+          for(int i=1;i < inputArray.length;i++){ 
+            if(inputArray[i] > maxValue){ 
+               maxValue = inputArray[i]; 
+      }  
+    } 
+    return maxValue; 
+  }
+    public static int getMin(int[] inputArray){ 
+      int minValue = inputArray[0]; 
+         for(int i=1;i<inputArray.length;i++){ 
+            if(inputArray[i] < minValue){ 
+                minValue = inputArray[i]; 
+      } 
+    } 
+    return minValue; 
+
+//		int[] A = { 6, 8, 3, 5, 20, 0 };
+//
+//		Arrays.sort(A);
+//
+//		System.out.println("Min element is " + A[0]);
+//		System.out.println("Max element is " + A[A.length - 1]);
+	}
+}
+  
+
+
