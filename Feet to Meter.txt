@@ -1,0 +1,15 @@
+
+import java.util.Scanner;
+public class NewClass {
+    
+    public static void main(String[] args)
+    {
+       int meter = 0;
+       Scanner in = new Scanner(System.in);
+       System.out.println("Enter the value to change meter to feet");
+       meter = in.nextInt();
+       int feet = (int) (3.28084* meter);
+       System.out.println("meters to feet is "+feet);
+    
+    }
+}
